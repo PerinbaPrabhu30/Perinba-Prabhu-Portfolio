@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Perinba Prabhu Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #f0f0f0;
+    animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  nav {
+    background-color: #534949;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ff9800;
+  }
+
+  section {
+    padding: 3rem 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .skills-box, .tools-box, .edu-box, .card, .achievement {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .skills-box:hover, .tools-box:hover, .card:hover, .achievement:hover, .edu-box:hover {
+    transform: scale(1.05);
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1, h2, h3, h4 {
+    color: #ff9800;
+  }
+
+  button {
+    padding: 10px 25px;
+    background-color: #ff9800;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ffa726;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+<a href="#home">Home</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+</nav>
+
+<!-- Section 1: Home -->
+<section id="home">
+<div class="container">
+  <div style="flex: 1;">
+    <h1>Perinba Prabhu S</h1>
+    <p>Motivated third-year Electronics and Communication Engineering student with a solid understanding of Core Java and SQL. Passionate about software development, database management, and problem-solving. Seeking opportunities to apply my technical knowledge, enhance my skills, and contribute to innovative projects in a dynamic organization.</p>
+  </div>
+  <div style="flex: 1; display: flex; justify-content: center;">
+    <img src="images/prabhu.jpg.jpg" alt="Profile Image" width="250">
+  </div>
+</div>
+</section>
+
+<!-- Section 2: Skills -->
+<section id="skills">
+<h2>Skills & Tools</h2>
+<div class="flex">
+<div class="skills-box">Core Java</div>
+<div class="skills-box">SQL</div>
+<div class="skills-box">Problem Solving</div>
+<div class="tools-box">Tools: IntelliJ IDEA, GitHub</div>
+</div>
+</section>
+
+<!-- Section 3: Projects -->
+<section id="projects">
+<h2>Project</h2>
+<div class="card">
+  <h3>ATM Machine Simulation in Java</h3>
+  <p>This project simulates an Automated Teller Machine (ATM) system using Java. The program allows a user to perform basic banking operations like:
+1.Checking account balance 2.Depositing money 3.Withdrawing money4.Exiting the session
+This is a console-based application and is primarily designed for educational purposes to understand object-oriented programming, conditional logic, and user interaction via console input.</p>
+</div>
+<div class="card">
+<h3>Smart Smoke and Fire Monitoring System</h3>
+<p>Developed an IoT-based smart smoke and fire monitoring system tailored for the fireworks industry. The system uses smoke and flame sensors to detect potential fire hazards, providing real-time alerts via Wi-Fi. It ensures early detection of dangerous conditions, helping to enhance safety measures in fireworks storage and production environments.</p>
+</div>
+</section>
+
+
+<!-- Section 5: Education & Certifications -->
+<section>
+<h2>Education</h2>
+<div class="flex">
+<div class="edu-box">
+<h4>B.E - Electronics and Communication Engineering (2022-2026)</h4>
+<p>Sethu Institute of Technology, CGPA: 7.603</p>
+</div>
+<div class="edu-box">
+<h4>Higher Secondary School Certificate (2021-2022)</h4>
+<p>VHN Higher Secondary School – 69.50%</p>
+</div>
+<div class="edu-box">
+<h4>Secondary School Certificate (2019-2020)</h4>
+<p>KNU Matriculation School – 75.40%</p>
+</div>
+</div>
+
+
+<!-- Section 4: Internship -->
+<section>
+<h2>Internship</h2>
+<div class="card">
+<h3>Smiligence, Madurai</h3>
+<p>I completed a one-week internship at Smiligence, where I gained hands-on experience in web development. 
+  During the internship, I learned key web development skills and applied them to create a 
+  personal portfolio showcasing my work.</p>
+  <img src="images/intern.jpg.jpeg" alt="internship" width="250">
+</div>
+</section>
+
+<h2>Certifications</h2>
+<div class="flex">
+<img src="images/nptel 1.jpg.jpeg" alt="Cert 1" width="200">
+<img src="images/nptel 2.jpg.jpeg" alt="Cert 2" width="200">
+<img src="images/ssi.jpg.jpeg" alt="Cert 3" width="200">
+</div>
+</section>
+
+<!-- Section 6: Achievements -->
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="achievement">
+<h3>Electrocognizance</h3>
+<p>Second place in Component Identification event.</p>
+</div>
+</section>
+
+<!-- Section 7: Contact -->
+<section>
+<h2>Contact</h2>
+<p><strong>Email:</strong> perinbaprabu.official@gmail.com</p>
+<p><strong>Phone:</strong> 8056787602</p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/perinba-prabhu" target="_blank">linkedin.com/in/perinba-prabhu</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/PerinbaPrabhu30" target="_blank">github.com/PerinbaPrabhu30</a></p>
+</section>
+
+<!-- Download Resume -->
+<section style="text-align: center;">
+<a href="https://drive.google.com/file/d/1-Y5sCi1i3CU0W0bdQaCL6KRV0fix_jtF/view?usp=drivesdk" download>
+<button>Download Resume</button>
+</a>
+</section>
+
+<!-- Footer -->
+<footer>
+&copy; 2025 Perinba Prabhu.
+</footer>
+
+</body>
+</html>
